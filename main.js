@@ -111,5 +111,9 @@ for(let i = 0; i < like_buttons.length; i++){
         event.preventDefault();
         //aggiugno la classe che indica il pulsante e stato clickato
         this.classList.add('like-button--liked');
+
+        //recupero il contenitore dei likes del ost clickato
+        let likes_dom = likes_counter[i];
+
     });
 }
