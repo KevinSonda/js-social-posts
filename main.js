@@ -99,3 +99,6 @@ posts.forEach((post) => {
 
 //recupero i pulsanti per mettere i like
 const like_buttons = document.querySelectorAll('.js-like-button');
+
+//recupero l'elemnto che contiene il numero di likes
+const likes_counter = document.querySelectorAll('.js-likes-counter');
