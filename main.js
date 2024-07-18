@@ -56,6 +56,8 @@ const posts = [
     }
 ];
 
+const likes_array = [];
+
 // recupero l'elemento del dom 
 const container = document.getElementById('container');
 
@@ -114,6 +116,18 @@ for(let i = 0; i < like_buttons.length; i++){
 
         //recupero il contenitore dei likes del ost clickato
         let likes_dom = likes_counter[i];
+        //recupero il numero dei likes
+        let likes = parseInt(likes_dom.innerText);
+
+        //inserisco il nuovo valore dei like del dom
+        likes_dom.innerText = likes + 1;
+
+        //inserisco nell'array dei likes l'id del post  che ho clickato
+        //recupero il post che ho clickato
+        let post = posts[i];
+        //aggiungo l'id de post che ho clicato all'array
+        likes_array.push(post.id);
+
 
     });
 }
