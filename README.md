@@ -1,0 +1,1 @@
+1 - Carichiamo i dati dell'array nell'html utilizzando la struttura prsente nel file index

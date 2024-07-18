@@ -55,3 +55,7 @@ const posts = [
         "created": "2021-03-05"
     }
 ];
+
+// recupero l'elemento del dom 
+const container = document.getElementById('container');
+
