@@ -106,4 +106,8 @@ const likes_counter = document.querySelectorAll('.js-likes-counter');
 for(let i = 0; i < like_buttons.length; i++){
     //creo una variabile contenete il valore attualmente ciclcato
     let button = like_buttons[i];
+    //aggiungo evento click
+    button.addEventListener('click', function () {
+        console.log(this);
+    });
 }
