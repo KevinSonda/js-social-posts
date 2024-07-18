@@ -107,7 +107,9 @@ for(let i = 0; i < like_buttons.length; i++){
     //creo una variabile contenete il valore attualmente ciclcato
     let button = like_buttons[i];
     //aggiungo evento click
-    button.addEventListener('click', function () {
-        console.log(this);
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        //aggiugno la classe che indica il pulsante e stato clickato
+        this.classList.add('like-button--liked');
     });
 }
