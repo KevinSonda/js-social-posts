@@ -102,3 +102,8 @@ const like_buttons = document.querySelectorAll('.js-like-button');
 
 //recupero l'elemnto che contiene il numero di likes
 const likes_counter = document.querySelectorAll('.js-likes-counter');
+//ciclo l'array dei pulsanti
+for(let i = 0; i < like_buttons.length; i++){
+    //creo una variabile contenete il valore attualmente ciclcato
+    let button = like_buttons[i];
+}
